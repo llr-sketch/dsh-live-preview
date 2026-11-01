@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Live Preview",
+    "description": "Run and watch the app you are building inside DSH: live web preview, Windows window capture, Android device/emulator mirror, and logs."
+  }
+}

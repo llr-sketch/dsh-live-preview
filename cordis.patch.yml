@@ -1,0 +1,5 @@
+# dsh-live-preview bundle patch: inserts the live-preview plugin row.
+- insert:
+    - id: dsh-live-preview
+      name: 'dsh-live-preview'
+      config: {}

@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.tgz
+*.log
+.DS_Store
+Thumbs.db
+
+# 本地开发设计文档（含个人路径），不随公开仓库发布
+CONTRACT.md
+CONTRACT-EMULATOR.md

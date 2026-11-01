@@ -1,0 +1,28 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  syntax:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Check JavaScript syntax
+        shell: pwsh
+        run: |
+          node --check index.js
+          node --check client.js
+          Get-ChildItem host -Filter *.js | ForEach-Object {
+            node --check $_.FullName
+            if ($LASTEXITCODE -ne 0) { exit 1 }
+          }
+      - name: Validate package manifest
+        run: node -e "JSON.parse(require('fs').readFileSync('package.json','utf8'))"
+      - name: Check npm pack contents
+        run: npm pack --dry-run
