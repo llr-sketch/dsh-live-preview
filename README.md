@@ -63,7 +63,11 @@ npm publish --access public
 
 对方安装：`plugin_manager install_bundle target = "dsh-live-preview@0.2.4"`（scoped 包则用 `@yourname/dsh-live-preview@0.2.4`）。
 
-**方式 C：Git 仓库 / tarball**
+**方式 C：GitHub Releases（普通用户最推荐）**
+
+在仓库的 **Releases** 页面下载 `dsh-live-preview-<版本>.zip`，解压到任意目录，然后按方式 A 的 `plugin_manager install_bundle` 安装即可。
+
+**方式 D：Git 仓库 / tarball**
 
 把仓库地址或 `.tgz` 文件给对方，用 `plugin_manager install_bundle target = "<git 地址或 tarball 的绝对路径>"`。
 
@@ -230,3 +234,7 @@ host/util.js        日志环形缓冲、JSON 响应、进程树终止、窗口�
 0.2.1-dev（工作区） — 新增「导入应用文件」（APK / exe / HTML·ZIP 自动识别并运行）+ 右侧边栏「实时预览」与会话并排（画面启动时自动打开）；横屏游戏分辨率/点击映射修正；非本机窗口（子进程/商店应用）自动定位。
 0.2.0 — 模拟器一键安装 + 30fps 高清串流（H.264/ffmpeg），真实模拟器实测 60fps。
 0.1.0 — 首个可用版本：网页 / Windows 窗口 / 安卓 adb 三目标预览 + 日志 + Agent 工具。
+
+---
+
+如果这个插件帮到你，欢迎 Star、提 Issue，或分享给刚开始学 AI 编程的朋友。
