@@ -1,6 +1,6 @@
 # dsh-live-preview（实时预览）
 
-![ci](https://github.com/llr18933366721-sketch/dsh-live-preview/actions/workflows/ci.yml/badge.svg)
+![ci](https://github.com/llr-sketch/dsh-live-preview/actions/workflows/ci.yml/badge.svg)
 
 DSH 左侧栏插件：在 DSH 窗口内**实时运行并查看正在开发的应用**，边写边看、边给建议。
 
